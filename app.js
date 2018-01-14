@@ -6,6 +6,10 @@ document.querySelector('header .fa-times').addEventListener('click', function(){
     document.querySelector('.search-box').classList.remove('search-box-active');
 })
 
+document.querySelector('header .fa-bars').addEventListener('click', function(){
+    document.querySelector('.dropdown-menu').classList.toggle('dropdown-menu-active');
+})
+
 window.addEventListener('scroll', function(){
     var scroll = window.pageYOffset;
     console.log('scrolling', scroll);
