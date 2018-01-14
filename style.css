@@ -41,6 +41,7 @@ header{
     /* border-bottom: 1px solid rgba(0, 0, 0, .1); */
     /* padding: 20px 10px; */
     background-color: #fff;
+    z-index: 100;
 }
 
 header .fa-bars{
@@ -162,6 +163,38 @@ header i{
 .spacer{
     height: 2000px;
 }
+/* ---------------------------------- */
+.pagination{
+    margin-top: 150px;
+}
+
+.pagination ul{
+    justify-content: flex-start;
+}
+
+.pagination-num{
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-left: none;
+    padding: 5px 10px;
+    background-color: #fff;
+}
+
+.pagination li:first-child{
+    border-left: 1px solid rgba(0, 0, 0, .1);
+}
+
+.pagination a{
+    color: #333;
+}
+
+.pagination li:hover{
+    background-color: #99cc33;
+    cursor: pointer;
+}
+
+.pagination-active{
+    background-color: #99cc33;
+}
 
 /* ---------------------------------- */
 
@@ -173,7 +206,7 @@ header i{
     border: 1px solid rgba(0, 0, 0, .1);
     border-right: none;
     border-bottom: none;
-    margin-top: 150px;
+    margin-top: 10px;
     margin-bottom: 100px;
 }
 
@@ -206,6 +239,7 @@ header i{
 }
 
 .user{
+    position: relative;
     display: inline-block;
     border-bottom: 3px solid #99cc33;
     margin-top: 10px;
@@ -231,4 +265,28 @@ header i{
     font-size: 13px;
     margin-top: 15px;
     letter-spacing: 2px;    
+}
+
+/* ---------------------------------- */
+
+footer{
+    padding: 20px 0;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    color: #ccc;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+footer i{
+    margin: 0 10px;
+}
+
+footer p{
+    border-bottom: 3px solid #ccc;
+}
+
+footer p:hover,
+footer i:hover{
+    color: #333;
+    cursor: pointer;
 }
