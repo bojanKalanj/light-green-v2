@@ -227,109 +227,87 @@ header i{
 }
 
 /* ---------------------------------- */
-.pagination{
-    margin-top: 150px;
-}
-
-.pagination ul{
-    justify-content: flex-start;
-}
-
-.pagination-num{
-    border: 1px solid rgba(0, 0, 0, .1);
-    border-left: none;
-    padding: 5px 10px;
-    background-color: #fff;
-}
-
-.pagination li:first-child{
-    border-left: 1px solid rgba(0, 0, 0, .1);
-}
-
-.pagination a{
-    color: #333;
-}
-
-.pagination li:hover{
-    background-color: #99cc33;
-    cursor: pointer;
-}
-
-.pagination-active{
-    background-color: #99cc33;
-}
 
 /* ---------------------------------- */
 
-.grid{
+.content{
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
-    /* height: 100%; */
     border: 1px solid rgba(0, 0, 0, .1);
-    border-right: none;
-    border-bottom: none;
-    margin-top: 10px;
-    margin-bottom: 100px;
+    margin-top: 150px;
+    margin-bottom: 50px;
 }
 
-.card{
-    width: 20%;
-    /* height: 500px; */
+.cont-inner{
+    margin: 10px;
+}
+
+.large-img{
+    width: 50%;
     border-right: 1px solid rgba(0, 0, 0, .1);
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
 }
 
-.inner-wrap{
-    width: 90%;
-    margin: 0 auto;
-    padding-top: 30px;
+.large-img img{
+    max-width: 100%;
+}
+
+.desc-map{
+    width: 40%;
+    border-right: 1px solid rgba(0, 0, 0, .1);
+}
+
+.desc-map h1{
+    font-family: "Domaine", serif;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #4a4a4a;
+}
+
+.desc-map p{
+    font-family: "Feijoa", serif;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.info{
+    width: 20%;
+}
+.info li{
+    height: 40px;
+}
+
+.info p{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.info a{
+    border-bottom: 3px solid #99cc33;
+    color: #333;
+}
+
+.images{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .img-wrap{
-    width: 100%;
+    width: 19%;
     overflow: hidden;
 }
 
 .img-wrap img{
-    max-width: 100%;
+    width: 100%;
 }
 
 .img-wrap img:hover{
     cursor: pointer;
 }
 
-.user{
-    position: relative;
-    display: inline-block;
-    border-bottom: 3px solid #99cc33;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    font-size: 13px;
-    text-transform: uppercase;
-    color: #333;
-}
-
-.title{
-    display: block;
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.location{
-    font-size: 14px;
-    font-family: "Feijoa", serif;
-}
-
-.date{
-    color: #ccc;
-    font-size: 13px;
-    margin-top: 15px;
-    letter-spacing: 2px;    
-}
 
 /* ---------------------------------- */
 
