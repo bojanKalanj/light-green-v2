@@ -8,6 +8,7 @@
 body{
     /* background-color: rgb(242, 249, 244); */
     background: #f4f7f6;
+    height:100%;
 }
 
 ul{
@@ -232,6 +233,7 @@ header i{
 
 .content{
     display: flex;
+    position: relative;
     width: 100%;
     border: 1px solid rgba(0, 0, 0, .1);
     margin-top: 150px;
@@ -252,14 +254,14 @@ header i{
 }
 
 .desc-map{
-    width: 40%;
+    width: 30%;
     border-right: 1px solid rgba(0, 0, 0, .1);
 }
 
 .desc-map h1{
     font-family: "Domaine", serif;
     font-weight: 400;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     color: #4a4a4a;
 }
 
@@ -268,23 +270,23 @@ header i{
     line-height: 20px;
     letter-spacing: 1px;
     text-align: justify;
-    margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 .info{
-    width: 20%;
+    width: 30%;
 }
-.info li{
-    height: 40px;
+.desc-map li{
+    /* height: 40px; */
 }
 
-.info p{
+.desc-map ul p{
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 600;
 }
 
-.info a{
+.desc-map a{
     border-bottom: 3px solid #99cc33;
     color: #333;
 }
@@ -308,6 +310,23 @@ header i{
     cursor: pointer;
 }
 
+.container{
+    position: relative;
+}
+
+.info{
+    position: relative;
+    margin: 10px;
+}
+
+iframe{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 /* ---------------------------------- */
 
