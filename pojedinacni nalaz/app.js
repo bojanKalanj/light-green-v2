@@ -12,10 +12,15 @@ document.querySelector('header .fa-bars').addEventListener('click', function(){
 
 window.addEventListener('scroll', function(){
     var scroll = window.pageYOffset;
-    console.log('scrolling', scroll);
     if(scroll > 90){
         document.querySelector('header').classList.add('header-scrolled');
     }else{
         document.querySelector('header').classList.remove('header-scrolled');
     }
 })
+
+// console.log(document.querySelectorAll('.left img'));
+
+// document.querySelectorAll('.left img').forEach(function(image){
+//     image.style.display = 'none';
+// })

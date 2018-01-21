@@ -19,3 +19,8 @@ window.addEventListener('scroll', function(){
         document.querySelector('header').classList.remove('header-scrolled');
     }
 })
+
+document.querySelector('.login').addEventListener('click', function(){
+    document.querySelector('.dropdown').classList.toggle('dropdown-active');
+    document.querySelector('.login').classList.toggle('login-black');
+})
