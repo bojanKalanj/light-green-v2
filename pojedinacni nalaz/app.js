@@ -23,14 +23,17 @@ window.addEventListener('scroll', function(){
 var modal = document.getElementById('myModal');
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg');
+var img = document.querySelectorAll('.myImg');
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
-img.onclick = function(){
+
+img.forEach(function(image){
+   image.addEventListener('click', function(){
     modal.style.display = "block";
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
-}
+   }) 
+})
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -40,26 +43,11 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 
-// var slideIndex = 1;
-// showDivs(slideIndex);
+var smallImgs = document.querySelectorAll('.modal-img');
 
-// function plusDivs(n) {
-//     showDivs(slideIndex += n);
-// }
-
-// function showDivs(n) {
-//     var i;
-//     var x = document.getElementsByClassName("mySlides");
-//     if (n > x.length) {slideIndex = 1} 
-//     if (n < 1) {slideIndex = x.length} ;
-//     for (i = 0; i < x.length; i++) {
-//         x[i].style.display = "none"; 
-//     }
-//     x[slideIndex-1].style.display = "block"; 
-// }
-
-// console.log(document.querySelectorAll('.left img'));
-
-// document.querySelectorAll('.left img').forEach(function(image){
-//     image.style.display = 'none';
-// })
+smallImgs.forEach(function(image){
+    image.addEventListener('click', function(){
+     modalImg.src = this.src;
+     captionText.innerHTML = this.alt;
+    }) 
+ }) 
