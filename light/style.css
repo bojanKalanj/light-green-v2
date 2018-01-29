@@ -7,7 +7,7 @@
 
 body{
     /* background-color: rgb(242, 249, 244); */
-    background: #00a890;
+    background: #fff;
 }
 
 ul{
@@ -16,7 +16,6 @@ ul{
 
 a{
     text-decoration: none;
-    color: #fff;
 }
 
 .flex{
@@ -43,7 +42,7 @@ a{
  
 ::-webkit-scrollbar-thumb {
     /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);  */
-    background-color: #03dcbd;        
+    background-color: #ccc;        
 }
 
 header{
@@ -53,12 +52,12 @@ header{
     left: .5%;
     top: 0;
     /* border: 1px solid #fff; */
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid #E6EAEA;
     
     border-top: none;
     /* border-bottom: 1px solid rgba(0, 0, 0, .1); */
     /* padding: 20px 10px; */
-    background-color: #00a890;
+    background-color: #fff;
     z-index: 100;
 }
 
@@ -75,9 +74,9 @@ header{
 
 nav{
     height: 60px;
-    color: #fff;
+    color: #333;
     text-transform: capitalize;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);    
+    border-bottom: 1px solid #E6EAEA;    
     /* border-bottom: 1px solid #fff; */
 }
 
@@ -94,7 +93,7 @@ nav i{
 .menu,
 .login{
     height: 100%;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid #E6EAEA;
     border-bottom: none;
     padding: 0 20px;
 }
@@ -111,11 +110,12 @@ nav i{
 
 .menu{
     border-left: none;
-    background-color: #03dcbd;
+    background-color: #99cc33;
 }
 
 .menu-active{
     background-color: #333;
+    color: #fff;
 }
 
 .menu:hover,
@@ -142,7 +142,7 @@ nav i{
     height: 100%;
     text-align: center;
     line-height: 60px;
-    background-color: #03dcbd;
+    background-color: #99cc33;
     color: #fff;
 }
 
@@ -206,7 +206,7 @@ nav i{
 }
 
 .filters p{
-    color: #fff;
+    color: #333;
     padding: 0 10px;
     text-transform: capitalize;
     font-size: 12px;
@@ -215,7 +215,7 @@ nav i{
 .filters li{
     height: 100%;    
     padding: 0 20px;
-    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid #E6EAEA; 
     border-top: none;
     border-bottom: none;
 }
@@ -227,14 +227,14 @@ nav i{
 
 .filters li:hover{
     cursor: pointer;
-    background-color: #03dcbd;
+    background-color: #99cc33;
 }
 
 .filters a{
     text-transform: uppercase;
     line-height: 50px;
     font-size: 12px;
-
+    color: #333;
 }
 
 nav{
@@ -253,13 +253,17 @@ nav{
     /* height: 400px;*/
 }
 
+.dropdown-menu a{
+    color: #fff;    
+}
+
 .dropdown-menu-active{
     height: 400px;
 }
 
 .dropdown-menu ul{
     padding: 10px 0;
-    border-bottom: 1px solid rgba(0, 168, 144, .3);
+    border-bottom: 1px solid #E6EAEA; 
 }
 
 .dropdown-menu li{
@@ -268,7 +272,11 @@ nav{
 
 .dropdown-menu li:hover{
     cursor: pointer;
-    background-color: #00a890;
+    background-color: #fff;
+}
+
+.dropdown-menu li:hover a{
+    color: #333;
 }
 
 .drop-soc{
@@ -283,11 +291,12 @@ nav{
     text-align: center;
     line-height: 30px;
     border-radius: 50%; 
-    border: 1px solid #00a890;
+    border: 1px solid #fff;
 }
 
 .drop-soc i:hover{
-    background-color: #00a890;
+    background-color: #fff;
+    color: #333;
 }
 
 /* ---------------------------------- */
@@ -300,7 +309,7 @@ nav{
 }
 
 .pagination-num{
-    border: 1px solid #03dcbd;
+    border: 1px solid #99cc33;;
     border-left: none;
     padding: 5px 10px;
     background-color: #fff;
@@ -315,12 +324,12 @@ nav{
 }
 
 .pagination li:hover{
-    background-color: #03dcbd;
+    background-color: #99cc33;
     cursor: pointer;
 }
 
 .pagination-active{
-    background-color: #03dcbd;
+    background-color: #99cc33;
 }
 
 /* ---------------------------------- */
@@ -330,7 +339,7 @@ nav{
     flex-wrap: wrap;
     width: 100%;
     /* height: 100%; */
-    border: 1px solid rgba(3, 220, 189, 0.3);
+    border:1px solid #E6EAEA; 
     border-right: none;
     border-bottom: none;
     margin-top: 10px;
@@ -340,7 +349,7 @@ nav{
 .card{
     width: 20%;
     /* height: 500px; */
-    border-right: 1px solid rgba(3, 220, 189, 0.3);
+    border-right: 1px solid #E6EAEA; 
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -368,28 +377,28 @@ nav{
 .user{
     position: relative;
     display: inline-block;
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid #99cc33;
     margin-top: 10px;
     margin-bottom: 15px;
     font-size: 13px;
     text-transform: uppercase;
-    color: #fff;
+    color: #99cc33;
 }
 
 .title{
     display: block;
     font-size: 20px;
-    color: #fff;
+    color: #333;
     margin-bottom: 15px;
 }
 
 .location{
     font-size: 14px;
-    color: #03dcbd;
+    color: #ccc;
 }
 
 .date{
-    color: #03dcbd;
+    color: #ccc;
     font-size: 13px;
     margin-top: 15px;
     letter-spacing: 2px;    
@@ -399,7 +408,7 @@ nav{
 
 footer{
     padding: 20px 0;
-    border-top: 1px solid rgba(3, 220, 189, 0.3);
+    border-top: 1px solid #E6EAEA; 
     color: #ccc;
     font-size: 14px;
     text-transform: uppercase;
@@ -411,11 +420,11 @@ footer i{
 
 footer p{
     font-size: 11px;
-    border-bottom: 3px solid #03dcbd;
+    border-bottom: 3px solid #ccc;
 }
 
 footer p:hover,
 footer i:hover{
-    color: #fff;
+    color: #333;
     cursor: pointer;
 }
