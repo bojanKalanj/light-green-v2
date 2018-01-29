@@ -110,7 +110,7 @@ nav i{
 }
 
 .menu{
-    border-left: none;
+    border: none;
     background-color: #03dcbd;
 }
 
@@ -259,7 +259,7 @@ nav{
 
 .dropdown-menu ul{
     padding: 10px 0;
-    border-bottom: 1px solid rgba(0, 168, 144, .3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .dropdown-menu li{
@@ -283,7 +283,7 @@ nav{
     text-align: center;
     line-height: 30px;
     border-radius: 50%; 
-    border: 1px solid #00a890;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .drop-soc i:hover{

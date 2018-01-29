@@ -69,7 +69,6 @@ header{
     box-shadow: 0 2px 4px -1px rgba(0,0,0,0.06), 0 4px 5px 0 rgba(0,0,0,0.06), 0 1px 10px 0 rgba(0,0,0,0.08);
     color: #03dcbd;
     box-shadow: 0 6px 5px 2px rgba(0,0,0,.3); 
-    background-color: #333;
 }
 
 nav{
@@ -109,7 +108,7 @@ nav i{
 }
 
 .menu{
-    border-left: none;
+    border: none;
     background-color: #99cc33;
 }
 
