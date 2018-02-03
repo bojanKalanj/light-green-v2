@@ -8,7 +8,6 @@
 body{
     /* background-color: rgb(242, 249, 244); */
     background: #fff;
-    background-color: #f6f5f6;
 }
 
 ul{
@@ -332,90 +331,196 @@ nav{
     background-color: #ccc;
 }
 
+
+
 /* ---------------------------------- */
 
-.grid{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    /* height: 100%; */
-    border:1px solid #E6EAEA; 
-    border-right: none;
-    border-bottom: none;
-    margin-top: 10px;
-    margin-bottom: 100px;
+.pencil-fixed{
+    position: fixed;
+    bottom: 120px;
+    right: 30px;
+    background-color: #363636;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
 }
 
-.card{
-    width: 20%;
-    /* height: 500px; */
-    border-right: 1px solid #E6EAEA; 
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.card:hover .title{
-    color: #000;
-}
-
-.card:hover .location{
-    color: #333;
-}
-
-.card:hover .date{
-    color: #333;
-}
-
-.inner-wrap{
-    width: 90%;
-    margin: 0 auto;
-    padding-top: 30px;
-}
-
-.img-wrap{
-    width: 100%;
-    overflow: hidden;
-}
-
-.img-wrap img{
-    max-width: 100%;
-}
-
-.img-wrap img:hover{
+.pencil-fixed:hover{
     cursor: pointer;
 }
 
-.user{
-    position: relative;
-    display: inline-block;
-    border-bottom: 3px solid #93da93;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    font-size: 13px;
+.pencil-fixed:hover p{
+    opacity: 1;
+}
+
+.pencil-fixed i{
+    line-height: 80px;
+    font-size: 50px;
+}
+
+.pencil-fixed p{
+    position: absolute;
+    color: #363636;
+    bottom: 110%;
+    text-transform: capitalize;
+    opacity: 0;
+}
+
+.content{
+    margin-top: 110px;
+}
+
+.fixed-head{
+    display: flex;
+    width: 100%;
+    background-color: #f6f5f6;
+    padding: 50px 0;
+    background-attachment: fixed;
+}
+
+.head-img{
+    width: 50%;
+    margin-left: 50px;
+    overflow: hidden;
+}
+
+.head-img-wrap{
+    width: 70%;
+    height: 70%;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.head-img-wrap img{
+    height: 100%;
+}
+
+.head-text{
+    width: 50%;
+    margin-top: 10%;
+    overflow: hidden;
+    text-align: right;
+    margin-right: 50px;  
+    text-align: center;      
+}
+
+.head-text h1{
+    font-size: 70px;
+    font-family: "Trade Gothic LT Std",sans-serif;
+    letter-spacing: .027em;
+    line-height: 1;
     text-transform: uppercase;
-    color: #93da93;
+    color: #363636;
+    margin-bottom: 150px;
+}
+
+.head-text a{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: "Trade Gothic LT Std",sans-serif;
     font-weight: 700;
+    color: #93da93;    
 }
 
-.title{
-    display: block;
+.head-text a:hover{
+    color: #8dd38d;
+}
+
+.head-text p{
+    color: #ccc;
     font-size: 20px;
-    color: #333;
-    margin-bottom: 15px;
 }
 
-.location{
-    font-size: 14px;
-    color: #ccc;
+.desc-map{
+    display: flex;
+    background-color: #93da93;
 }
 
-.date{
-    color: #ccc;
-    font-size: 13px;
-    margin-top: 15px;
-    letter-spacing: 2px;    
+.left-desc{
+    width: 50%;
+    color: #fff;
+    text-transform: capitalize;
 }
+
+.left-desc li{
+    display: flex;
+    justify-content: space-between;
+    line-height: 50px;
+    border: 1px solid #E6EAEA;
+    padding: 0 10px;
+}
+
+.left-desc a{
+    color: #fff;
+    position: relative;
+}
+
+.left-desc a:before{
+    content: '';
+    position: absolute;
+    top: 70%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+}
+
+.right-map{
+    width: 49%;
+}
+
+.right-map iframe{
+    width: 100%;
+    padding: 10px 0;
+}
+
+.card{
+    width: 25%;
+    float: left;
+    /* border: 1px solid red; */
+}
+
+.image-wrapper{
+    position: relative;    
+    margin: 20px;
+    padding-bottom: 20px;
+    /* border-bottom: 3px solid #93da93;     */
+}
+
+.image-wrapper-hover{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: rgba(147, 218, 147, .6);
+    text-align: center;
+    overflow: hidden;
+}
+
+.image-wrapper-hover p{
+    color: #fff;
+    text-transform: capitalize;
+    margin-top: 150px;
+}
+
+.image-wrapper:hover .image-wrapper-hover{
+    height: 100%;
+    cursor: pointer;
+}
+
+.image-wrapper img{
+    width: 100%;
+}
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
 /* ---------------------------------- */
 

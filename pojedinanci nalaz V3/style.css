@@ -8,7 +8,6 @@
 body{
     /* background-color: rgb(242, 249, 244); */
     background: #fff;
-    background-color: #f6f5f6;
 }
 
 ul{
@@ -110,7 +109,7 @@ nav i{
 
 .menu{
     border: none;
-    background-color: #93da93;
+    background-color: #99cc33;
 }
 
 .menu-active{
@@ -142,7 +141,7 @@ nav i{
     height: 100%;
     text-align: center;
     line-height: 60px;
-    background-color: #93da93;
+    background-color: #99cc33;
     color: #fff;
 }
 
@@ -227,7 +226,7 @@ nav i{
 
 .filters li:hover{
     cursor: pointer;
-    background-color: #93da93;
+    background-color: #99cc33;
 }
 
 .filters a{
@@ -333,88 +332,112 @@ nav{
 }
 
 /* ---------------------------------- */
-
-.grid{
+.content{
+    /* display: flex; */
+    /* justify-content: flex-start; */
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    /* height: 100%; */
-    border:1px solid #E6EAEA; 
-    border-right: none;
-    border-bottom: none;
-    margin-top: 10px;
+    justify-content: space-between;
+    height: 70vh;
+    margin-top: 150px; 
     margin-bottom: 100px;
+    
 }
 
-.card{
+.desc-fixed{
+    /* position: fixed; */
+    top: 150px;
+    left: 5%;
+    height: 100%;
     width: 20%;
-    /* height: 500px; */
-    border-right: 1px solid #E6EAEA; 
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
+    background-color: #333;
+    /* box-shadow: 3px 0px 21px 1px #383838; */
+    box-shadow: 0 20px 20px rgba(0,0,0,.08);
+
+}
+
+.desc-fixed li{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #E6EAEA;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 13px;
+}
+
+.desc-fixed .title{
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+.desc-fixed a{
+    color: #fff;
+    border-bottom: 3px solid #fff;
+}
+
+.right-side{
+    height: 100%;
+    width: 80%;
+    background-color: #333;
+    border: 5px solid #333;
     box-sizing: border-box;
 }
 
-.card:hover .title{
-    color: #000;
+.right-inner{
+    /* margin: 10px; */
 }
 
-.card:hover .location{
-    color: #333;
-}
-
-.card:hover .date{
-    color: #333;
-}
-
-.inner-wrap{
-    width: 90%;
-    margin: 0 auto;
-    padding-top: 30px;
-}
-
-.img-wrap{
+.right-side iframe{
     width: 100%;
-    overflow: hidden;
+    height: 100%;
 }
 
-.img-wrap img{
-    max-width: 100%;
+.small-shit-menu{
+    position: absolute;
+    right: 4px;
+    height: 30%;
+    /* background-color: rgba(255, 255, 255, .1); */
+    background-color: #333;
 }
 
-.img-wrap img:hover{
+.small-shit-menu ul{
+    margin-top: 30px;
+    padding: 0 30px;
+}
+
+.small-shit-menu li{
+    position: relative;
+    line-height: 50px;
+}
+
+.small-shit-menu a{
+    color: #ccc;
+}
+
+.small-shit-menu a:before{
+    content: '';
+    position: absolute;
+    top: 70%;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #fff;
+}
+
+.small-shit-menu li:hover{
     cursor: pointer;
 }
 
-.user{
-    position: relative;
-    display: inline-block;
-    border-bottom: 3px solid #93da93;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    font-size: 13px;
-    text-transform: uppercase;
-    color: #93da93;
-    font-weight: 700;
+.small-shit-menu li:hover a{
+    color: #fff;
 }
 
-.title{
-    display: block;
-    font-size: 20px;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.location{
-    font-size: 14px;
-    color: #ccc;
-}
-
-.date{
-    color: #ccc;
-    font-size: 13px;
-    margin-top: 15px;
-    letter-spacing: 2px;    
+.small-shit-menu li:hover a:before{
+    width: 100%;
+    transition: .3s;
 }
 
 /* ---------------------------------- */

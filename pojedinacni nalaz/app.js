@@ -7,9 +7,12 @@ window.addEventListener('scroll', function(){
     }
 })
 
-document.querySelector('.menu').addEventListener('click', function(){
-    document.querySelector('.menu').classList.toggle('menu-active');
-    document.querySelector('.dropdown-menu').classList.toggle('dropdown-menu-active');    
+var dropdownMenu = document.querySelector('.dropdown-menu');
+var menuBtn = document.querySelector('.menu');
+
+menuBtn.addEventListener('click', function(){
+    menuBtn.classList.toggle('menu-active');
+    dropdownMenu.classList.toggle('dropdown-menu-active');    
 });
 
 document.querySelector('.search').addEventListener('click', function(){
@@ -19,6 +22,14 @@ document.querySelector('.search').addEventListener('click', function(){
 document.querySelector('.search-input .fa-times').addEventListener('click', function(){
     document.querySelector('.search-input').classList.remove('search-input-active');    
 });
+
+window.onclick = function(event) {
+    if (event.target != menuBtn && event.target != dropdownMenu) {
+        console.log('removed')
+        menuBtn.classList.remove('menu-active');        
+        dropdownMenu.classList.remove('dropdown-menu-active');
+    }
+}
 
 // --------------MODAL--------------
 
