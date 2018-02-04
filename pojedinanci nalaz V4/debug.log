@@ -28,3 +28,7 @@
 [0129/211130.691:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Google\Chrome\settings.dat: Access is denied. (0x5)
 [0129/211131.009:ERROR:persistent_memory_allocator.cc(738)] Corruption detected in shared-memory segment.
 [0129/211131.009:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Google\Chrome\settings.dat: Access is denied. (0x5)
+[0204/002353.436:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Google\Chrome\settings.dat: Access is denied. (0x5)
+[0204/004130.858:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Google\Chrome\settings.dat: Access is denied. (0x5)
+[0204/004130.904:ERROR:registration_protocol_win.cc(83)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[0204/004131.357:ERROR:crashpad_win.cc(223)] Crashpad handler failed to start, crash reporting disabled
