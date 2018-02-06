@@ -310,9 +310,9 @@ nav{
 }
 
 .pagination-num{
-    border: 1px solid #99cc33;
+    border: 1px solid #ccc;
     border-left: none;
-    padding: 5px 10px;
+    padding: 11px 12px;
     background-color: #fff;
 }
 
@@ -325,12 +325,12 @@ nav{
 }
 
 .pagination li:hover{
-    background-color: #99cc33;
+    background-color: #ccc;
     cursor: pointer;
 }
 
 .pagination-active{
-    background-color: #99cc33;
+    background-color: #ccc;
 }
 
 /* ---------------------------------- */

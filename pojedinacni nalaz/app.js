@@ -56,3 +56,12 @@ smallModalImgs.forEach(function(imgs){
 closeBtn.addEventListener('click', function(){
     modal.style.display = 'none';
 })
+
+var fullscreanBtn = document.querySelectorAll('.on-img-hover');
+
+fullscreanBtn.forEach(function(full){
+    full.addEventListener('click', function(){
+        modal.style.display = 'block';
+        modalimg.src = this.offsetParent.children[0].src
+    })
+})

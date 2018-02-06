@@ -299,11 +299,47 @@ nav{
 }
 
 /* ---------------------------------- */
-.pagination{
-    margin-top: 150px;
+
+.pencil-fixed{
+    position: fixed;
+    bottom: 120px;
+    right: 30px;
+    background-color: #363636;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+    -webkit-box-shadow: 0 1px 1.5px 0 rgba(0,0,0,.12), 0 1px 1px 0 rgba(0,0,0,.24);
+    box-shadow: 0 1px 1.5px 0 rgba(0,0,0,.12), 0 1px 1px 0 rgba(0,0,0,.24);
 }
 
-.pagination ul{
+.pencil-fixed:hover{
+    cursor: pointer;     
+}
+
+.pencil-fixed:hover p{
+    opacity: 1;
+}
+
+.pencil-fixed i{
+    line-height: 60px;
+    font-size: 30px;
+}
+
+.pencil-fixed p{
+    position: absolute;
+    color: #363636;
+    bottom: 110%;
+    text-transform: capitalize;
+    opacity: 0;
+}
+/* .pagination{
+    margin-top: 150px;
+} */
+
+/* .pagination ul{
     justify-content: flex-start;
 }
 
@@ -329,40 +365,46 @@ nav{
 
 .pagination-active{
     background-color: #ccc;
-}
+} */
 
 /* ---------------------------------- */
 .head{
-    position: relative;
+    /* position: relative; */
     width: 1200px;
     margin: 0 auto;
-    margin-top: 150px;
+    margin-top: 50px;
 }
 
 .head h1{
-    margin-top: 50px;
-    max-width: 40%;    
-    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;    
+    border-bottom: 1px solid #E6EAEA;
+    /* max-width: 40%;     */
     color: #333;
     font-weight: 800;
     letter-spacing: 3px;
-    font-size: 60px;
-    text-align: center;
+    font-size: 30px;
+    text-align: left;
 }
 
-.head-img{
-    width: auto;
-    max-width: 60%;
-    float: right;
+.content .title  a{
+    /* color: #93da93; */
+    border: none;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.content .title  p{
+    color: #ccc;
 }
 
 .content{
     position: absolute;
-    width: 80%;
+    width: 50%;
     /* background-color: rgba(244, 247, 246, .9); */
     background-color: #fff;
     padding: 20px;
-    top: 400px;
+    top: 100px;
     left: 50%;
     transform: translateX(-50%);
     box-shadow: 0 20px 20px rgba(0,0,0,.08);
@@ -400,19 +442,53 @@ nav{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.on-img-hover{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    height: 0%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .3);
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cont-img-wrap:hover .on-img-hover{
+    height: 100%;
 }
 
 .cont-img-wrap{
+    position: relative;    
     width: 49%;
-    height: 330px;
+    height: 300px;
     overflow: hidden;
     margin-top: 20px;   
 }
+.on-img-hover:hover{
+    cursor: pointer;
+}
 
-.cont-img-wrap:hover{
+.on-img-hover a{
+    color: #111;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 1px solid #111;
+    padding: 5px 10px;
+}
+
+/* .cont-img-wrap:hover{
     cursor: pointer;
     opacity: .7;
-}
+} */
 
 .cont-img-wrap img{
     width: 100%;
@@ -424,12 +500,39 @@ nav{
     margin-top: 20px;
 } */
 
+.content button{
+   /* float: right; */
+    position: absolute;
+    right: 15px;
+   border: 3px solid #363636;
+   background: none;
+   padding: 10px 20px;
+   text-transform: uppercase;
+   /* background-color: #333; */
+   color: #fff;
+   color: #363636;
+   margin-top: 10px;
+}
+
+.content button:hover{
+    cursor: pointer;
+    color: #99cc33;
+}
+
 ::selection {
     background: #99cc33; /* WebKit/Blink Browsers */
+    color: #fff;
   }
   ::-moz-selection {
     background: #99cc33; /* Gecko Browsers */
+    color: #fff;    
   }
+
+  .group:after {
+    content: "";
+    display: table;
+    clear: both;
+  }  
 /* ---------------------------------- */
 .modal{
     position: fixed;
@@ -495,13 +598,14 @@ nav{
 
 footer{
     /* position: fixed; */
-    /* bottom: 0; */
     /* left: 5%; */
+    width: 100%;
     padding: 20px 0;
     border-top: 1px solid #E6EAEA; 
     color: #ccc;
     font-size: 14px;
     text-transform: uppercase;
+    /* background-color: red; */
 }
 
 footer i{
