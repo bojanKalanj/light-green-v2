@@ -45,6 +45,15 @@ a{
     background-color: #ccc;        
 }
 
+::selection {
+    background: #99cc33; /* WebKit/Blink Browsers */
+    color: #fff;
+  }
+  ::-moz-selection {
+    background: #99cc33; /* Gecko Browsers */
+    color: #fff;    
+  }
+
 header{
     width: 99%;
     /* height: 60px; */
@@ -303,7 +312,7 @@ nav{
 .pencil-fixed{
     position: fixed;
     bottom: 120px;
-    right: 30px;
+    right: 20px;
     background-color: #363636;
     width: 60px;
     height: 60px;
@@ -368,74 +377,79 @@ nav{
 } */
 
 /* ---------------------------------- */
-.head{
-    /* position: relative; */
-    width: 1200px;
-    margin: 0 auto;
-    margin-top: 50px;
-}
-
-.head h1{
-    margin-top: 10px;
-    margin-bottom: 10px;    
-    border-bottom: 1px solid #E6EAEA;
-    /* max-width: 40%;     */
-    color: #333;
-    font-weight: 800;
-    letter-spacing: 3px;
-    font-size: 30px;
-    text-align: left;
-}
-
-.content .title  a{
-    /* color: #93da93; */
-    border: none;
-    text-transform: capitalize;
-    font-size: 20px;
-}
-
-.content .title  p{
-    color: #ccc;
-}
 
 .content{
-    position: absolute;
-    width: 50%;
-    /* background-color: rgba(244, 247, 246, .9); */
-    background-color: #fff;
-    padding: 20px;
-    top: 100px;
-    left: 50%;
-    transform: translateX(-50%);
-    box-shadow: 0 20px 20px rgba(0,0,0,.08);
+    margin-top: 110px;
+    color: #231F20;
+    font-size: 16px;
 }
 
-.content iframe{
+.head{
+    position: relative;
     width: 100%;
+    height: 600px;
+    background: url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-attachment: fixed; 
 }
 
-.content ul{
-    margin-top: 30px;
+.over-head{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #99cc33;
 }
 
-.content li{
+.desc-map{
+    position: relative;
     display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #E6EAEA;
-    /* height: 50px; */
-    line-height: 50px;
-    text-transform: uppercase;
-    color: #333;
-    font-size: 13px;
+    justify-content: flex-end;
+    height: 600px;
+    background-color: #fff;
 }
 
-/* .content li:hover{
-    background-color: #fff;
-} */
+.desc{
+    position: absolute;
+    left: 0;
+    top: -200px;
+    width: 40%;
+    /* background-color: #fff; */
+    background-color: #fff;    
+    color: #363636;
+}
 
-.content a{
+.desc h1{
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 5px;
+    /* margin-bottom: 50px; */
     color: #99cc33;
-    border-bottom: 3px solid #99cc33;
+}
+
+.desc p{
+    text-align: justify;
+    letter-spacing: 1px;
+    color: #363636;    
+    line-height: 30px;
+}
+
+.desc-inner{
+    padding: 100px;
+    padding-top: 50px;
+}
+
+.map{
+    width: 60%;
+}
+
+.map iframe{
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;    
+    height: 97%;
 }
 
 .cont-images{
@@ -443,6 +457,14 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 50px;
+}
+
+.images{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding-top: 60px;
 }
 
 .on-img-hover{
@@ -455,6 +477,8 @@ nav{
     height: 0%;
     width: 100%;
     background-color: rgba(255, 255, 255, .3);
+    border-radius: 5px;
+    
     /* text-align: center; */
     display: flex;
     align-items: center;
@@ -468,10 +492,10 @@ nav{
 
 .cont-img-wrap{
     position: relative;    
-    width: 49%;
+    width: 30%;
     height: 300px;
     overflow: hidden;
-    margin-top: 20px;   
+    margin-bottom: 50px;
     border-radius: 5px;
     -webkit-box-shadow: 0 2px 4px -1px rgba(0,0,0,0.06), 0 4px 5px 0 rgba(0,0,0,0.06), 0 1px 10px 0 rgba(0,0,0,0.08);
     box-shadow: 0 2px 4px -1px rgba(0,0,0,0.06), 0 4px 5px 0 rgba(0,0,0,0.06), 0 1px 10px 0 rgba(0,0,0,0.08);
@@ -496,8 +520,7 @@ nav{
 .cont-img-wrap img{
     width: 100%;
     border-radius: 5px;
-    -webkit-box-shadow: 0 2px 4px -1px rgba(0,0,0,0.06), 0 4px 5px 0 rgba(0,0,0,0.06), 0 1px 10px 0 rgba(0,0,0,0.08);
-    box-shadow: 0 2px 4px -1px rgba(0,0,0,0.06), 0 4px 5px 0 rgba(0,0,0,0.06), 0 1px 10px 0 rgba(0,0,0,0.08);
+    
 }
 
 /* .cont-images img{
@@ -524,15 +547,6 @@ nav{
     cursor: pointer;
     color: #99cc33;
 }
-
-::selection {
-    background: #99cc33; /* WebKit/Blink Browsers */
-    color: #fff;
-  }
-  ::-moz-selection {
-    background: #99cc33; /* Gecko Browsers */
-    color: #fff;    
-  }
 
   .group:after {
     content: "";
