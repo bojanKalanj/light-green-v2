@@ -71,12 +71,11 @@ header{
 }
 
 .header-scrolled{
-    width: 90%;
-    left: 5%;
-    right: 5%;
+    /* width: 90%; */
+    /* left: 5%; */
+    /* right: 5%; */
     -webkit-box-shadow: 0 2px 4px -1px rgba(0,0,0,0.06), 0 4px 5px 0 rgba(0,0,0,0.06), 0 1px 10px 0 rgba(0,0,0,0.08);
     box-shadow: 0 2px 4px -1px rgba(0,0,0,0.06), 0 4px 5px 0 rgba(0,0,0,0.06), 0 1px 10px 0 rgba(0,0,0,0.08);
-    color: #03dcbd;
     box-shadow: 0 6px 5px 2px rgba(0,0,0,.3); 
 }
 
@@ -425,7 +424,7 @@ nav{
     font-size: 30px;
     text-align: center;
     letter-spacing: 5px;
-    /* margin-bottom: 50px; */
+    margin-bottom: 50px;
     color: #99cc33;
 }
 
@@ -456,7 +455,7 @@ nav{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .images{
@@ -465,6 +464,10 @@ nav{
     flex-wrap: wrap;
     background-color: #fff;
     padding-top: 60px;
+}
+
+.images-inner{
+    width: 19%;
 }
 
 .on-img-hover{
@@ -492,13 +495,14 @@ nav{
 
 .cont-img-wrap{
     position: relative;    
-    width: 30%;
-    height: 300px;
+    width: 100%;
+    /* height: 300px; */
     overflow: hidden;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     border-radius: 5px;
     -webkit-box-shadow: 0 2px 4px -1px rgba(0,0,0,0.06), 0 4px 5px 0 rgba(0,0,0,0.06), 0 1px 10px 0 rgba(0,0,0,0.08);
     box-shadow: 0 2px 4px -1px rgba(0,0,0,0.06), 0 4px 5px 0 rgba(0,0,0,0.06), 0 1px 10px 0 rgba(0,0,0,0.08);
+    box-shadow: 0 2px 3px 1px rgba(0,0,0,.3); 
 }
 .on-img-hover:hover{
     cursor: pointer;

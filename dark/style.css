@@ -46,6 +46,15 @@ a{
     background-color: #ccc;        
 }
 
+::selection {
+    background: #99cc33; /* WebKit/Blink Browsers */
+    color: #fff;
+  }
+  ::-moz-selection {
+    background: #99cc33; /* Gecko Browsers */
+    color: #fff;    
+  }
+
 header{
     width: 99%;
     /* height: 60px; */
@@ -63,9 +72,7 @@ header{
 }
 
 .header-scrolled{
-    width: 90%;
-    left: 5%;
-    right: 5%;
+    
     -webkit-box-shadow: 0 2px 4px -1px rgba(0,0,0,0.06), 0 4px 5px 0 rgba(0,0,0,0.06), 0 1px 10px 0 rgba(0,0,0,0.08);
     box-shadow: 0 2px 4px -1px rgba(0,0,0,0.06), 0 4px 5px 0 rgba(0,0,0,0.06), 0 1px 10px 0 rgba(0,0,0,0.08);
     color: #03dcbd;
@@ -115,8 +122,8 @@ nav i{
 }
 
 .menu-active{
-    background-color: #fff;
-    color: #333;
+    background-color: #111;
+    color: #fff;
 }
 
 .menu:hover,
@@ -247,7 +254,7 @@ nav{
     right: 0;
     top: 100%;
     height: 0px;
-    background-color: #fff;
+    background-color: #111;
     font: 12px/1.4 "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Verdana,Tahoma,sans-serif;
     /* border: 1px solid rgba(0, 168, 144, .3);     */
     overflow: hidden;
@@ -297,7 +304,7 @@ nav{
 }
 
 .dropdown-menu a{
-    color: #333;
+    color: #fff;
 }
 
 /* ---------------------------------- */
